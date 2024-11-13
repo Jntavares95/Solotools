@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Produtos</title>
     <style>
         body {
@@ -11,12 +12,27 @@
             padding: 20px;
         }
         .menu {
-    position: absolute;
-    top: 30px;
-    right: 20px;
+    position: fixed;
+    top: 30px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    display: flex;
+    flex-direction: row; /* Alinha os itens verticalmente */
+}
 
-
+.menu a {
+    color: #000000; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-bottom: 20px; /* Espaçamento entre os links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 6px; /* Cantos arredondados */
+    padding: 8px 16px; /* Espaçamento interno */
+   
+    
+}
+.menu a:hover {
+            background-color: rgba(219, 92, 33, 0.685); /* Escurece o fundo ao passar o mouse */
         }
+
         h1 {
             text-align: center;
             color: #333;
@@ -105,4 +121,3 @@
 
 </body>
 </html>
-
